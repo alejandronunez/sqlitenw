@@ -19,8 +19,8 @@ goto end
 if not "%1" == "x86" goto nwjs_64
 call npm install nw-gyp
 call cinst wget 7zip.commandline
-call wget http://dl.nwjs.io/v%nwjs_version%/nwjs-v%nwjs_version%-win-ia32.zip
-call 7z e -onw nwjs-v%nwjs_version%-win-ia32.zip
+call wget http://dl.nwjs.io/v%nwjs_version%/node-webkit-v%nwjs_version%-win-ia32.zip
+call 7z e -onw node-webkit-v%nwjs_version%-win-ia32.zip
 dir nw
 set PATH=nw;%PATH%
 call node-pre-gyp rebuild --runtime=node-webkit --target=%nwjs_version% --target_arch=ia32
