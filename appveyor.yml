@@ -17,12 +17,12 @@ environment:
 #    - nodejs_version: 0.12.0
 #      platform: x64
 #      msvs_toolset: 12
-    - nodejs_version: 1.2.0
-      nwjs_version: 0.10.5
+    - nodejs_version: 0.10.36
+      nw_version: 0.10.5
       platform: x86
       msvs_toolset: 12
     - nodejs_version: 1.2.0
-      nwjs_version: 0.10.0
+      nw_version: 0.10.0
       platform: x86
       msvs_toolset: 12
 #    - nodejs_version: 1.2.0
