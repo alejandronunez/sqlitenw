@@ -4,36 +4,40 @@ environment:
   node_pre_gyp_secretAccessKey:
     secure: 1amwJJw9fu0j6dXnc5KsAQbSYf7Cjw/dapT6OZWABa6nc52grkKeLQ+DGaOfQz8i
   matrix:
-    - nodejs_version: 0.10.36
-      nw_version: 0.8.6
-      platform: x86
-      msvs_toolset: 12
-    - nodejs_version: 0.10.36
-      platform: x64
-      msvs_toolset: 12
-    - nodejs_version: 0.12.0
-      platform: x86
-      msvs_toolset: 12
-    - nodejs_version: 0.12.0
-      platform: x64
-      msvs_toolset: 12
+#    - nodejs_version: 0.10.36
+#      nw_version: 0.8.6
+#      platform: x86
+#      msvs_toolset: 12
+#    - nodejs_version: 0.10.36
+#      platform: x64
+#      msvs_toolset: 12
+#    - nodejs_version: 0.12.0
+#      platform: x86
+#      msvs_toolset: 12
+#    - nodejs_version: 0.12.0
+#      platform: x64
+#      msvs_toolset: 12
     - nodejs_version: 1.2.0
-      nwjs_version: 0.12.0-alpha3
+      nwjs_version: 0.12.3
       platform: x86
       msvs_toolset: 12
-    - nodejs_version: 1.2.0
-      nwjs_version: 0.12.0-alpha3
-      platform: x64
+    - nodejs_version: 0.8.25
+      nwjs_version: 0.12.3
+      platform: x86
       msvs_toolset: 12
+#    - nodejs_version: 1.2.0
+#      nwjs_version: 0.12.0-alpha3
+#      platform: x64
+#      msvs_toolset: 12
     # custom visual studio 2014 builds
-    - nodejs_version: 0.10.33
-      platform: x86
-      msvs_toolset: 14
-      BUILD_ARGS: --dist-url=https://s3.amazonaws.com/mapbox/node-cpp11 --toolset=v140
-    - nodejs_version: 0.10.33
-      platform: x64
-      msvs_toolset: 14
-      BUILD_ARGS: --dist-url=https://s3.amazonaws.com/mapbox/node-cpp11 --toolset=v140
+#    - nodejs_version: 0.10.33
+#      platform: x86
+#      msvs_toolset: 14
+#      BUILD_ARGS: --dist-url=https://s3.amazonaws.com/mapbox/node-cpp11 --toolset=v140
+#    - nodejs_version: 0.10.33
+#      platform: x64
+#      msvs_toolset: 14
+#      BUILD_ARGS: --dist-url=https://s3.amazonaws.com/mapbox/node-cpp11 --toolset=v140
 
 os: Visual Studio 2014 CTP4
 
